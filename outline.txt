@@ -1,0 +1,27 @@
+Outline
+
+1. INTRODUCTION (JJG)
+   ---inferred accretion rates of low-mass protostellar disks
+   ---current understanding of MRI in these disks
+   ---molecular spectra of disks
+   ---the goals of this work
+   ---outline of paper
+
+2. METHODS (BH)
+   ---summary of ProDiMo
+   ---implementation of dissipation profile
+   ---model parameters
+  	    + disk surface density
+	    + dust abundance and properties
+   	    + stellar UV, etc.
+   ---molecular lines included
+
+3. RESULTS
+  ---Compare temperature, density, and spectra for several models
+  	     0. ISM dust/100, no accretion [baseline model]
+	     1. Like model 1, but for full ISM dust
+	     2. ISM dust/100, uniform (by mass) viscous heating for Mdot = dex(-8) Msun/yr
+	     3. ISM dust/100, Hirose & Turner heating profile for Mdot = dex(-8), dex(-7)
+
+4. DISCUSSION
+  ---

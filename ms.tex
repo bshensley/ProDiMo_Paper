@@ -1,0 +1,235 @@
+\documentclass[12pt,preprint]{aastex}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage{color} % For use only with the \remark{} macro below.
+
+\slugcomment{21 May, 2012}
+
+\newcommand{\unit}[1]{\,{\rm #1}}
+\newcommand{\bfnabla}{{\mbox{\boldmath $\nabla$}}}
+\newcommand{\gcmsq}{\unit{g\,cm^{-2}}}
+\newcommand{\kms}{\,\mbox{km s}^{-1}}
+\newcommand{\kpc}{\,\mbox{kpc}}
+\newcommand{\pc}{\,\mbox{pc}}
+\newcommand{\QT}{Q_{\rm T}}
+\newcommand{\RH}{R_{\rm H}}
+\newcommand{\rS}{r_{\rm S}}
+\newcommand{\yr}{\,\mbox{yr}}
+\newcommand{\Gyr}{\,\mbox{Gyr}}
+\newcommand{\au}{\,\textsc{au}}
+\newcommand{\msun}{M_\odot}
+\newcommand{\mbh}{M_{\rm{BH}}}
+\newcommand{\del}{\partial}
+\renewcommand{\bv}{{\mbox{\boldmath $v$}}}
+\newcommand{\avg}[1]{\langle\langle#1\rangle\rangle}
+%\newcommand{\<}{\,\langle\langle}
+%\renewcommand{\>}{\,\rangle\rangle}
+\newcommand{\solaryr}{M_{\odot}\ \mbox{yr}^{-1}}
+\newcommand{\prodimo}{{\sc ProDiMo}\,}
+\newcommand{\remark}[1]{{\color{red}\bf#1}} % Macro for editorial questions in boldface
+
+\shortauthors{Brandon Hensley \& Jeremy Goodman} \shorttitle{Signatures of accretion}
+
+\begin{document}
+
+\title{Signatures of accretion in protostellar disks}
+
+\author{Brandon Hensley\altaffilmark{1}  \& Jeremy Goodman\altaffilmark{1}  }
+\affil{$^1$Department of Astrophysical Sciences, Princeton
+University, Princeton, NJ 08544, USA}
+\begin{abstract}
+To be written
+\end{abstract}
+
+\keywords{ accretion, accretion disks --- stars: formation }
+
+\section{Introduction}
+\label{sec:intro}
+For many years, observational constraints on dynamical models of protostellar disks were
+limited to broad-band spectral-energy distributions (SEDs), accretion rates as determined
+from excess emission on the blue side of the stellar photospheric emission, and inferences
+concerning the primordial solar nebula based on the present solar system.  The recent
+harvest of infrared molecular spectra from observatories such as {\it Spitzer}, {\it
+  Herschel}, Keck, and the VLT promises by the sheer number of bits involved to provide
+much more detailed constraints to modelers, if only one can interpret these new data
+intelligently \remark{References here}.
+
+A longstanding dynamical question is the nature of the mechanism responsible for
+extracting angular momentum from the accreting material.  The main suspect is turbulence
+driven by the magnetorotational instability (MRI), but a difficulty with this mechanism is
+the very low ionization fraction of the disk gas, so that coupling to magnetic fields may
+be insufficient for MRI \remark{many references here}.  At distances of a few tenths to a
+few $\au$ from the accreting low-mass protostar, it is believed that stellar X-rays and
+other nonthermal sources of ionization support MRI only in near-surface layers of the disk
+having typical column densities at $1\au$ of order $10\gcmsq$, much less than the total
+disk column\citep[and references
+therein]{Gammie96,Glassgold+etal97,Bai+Goodman2009}.
+
+\subsection{Energetics}\label{subsec:energetics}
+
+As is well known, a razor-thin disk intercepts one quarter of the stellar luminosity, and
+The stellar flux impinging on one side of the disk at radius $r\gg R_*$ is $F_*(r) \approx L_* R_*/6\pi r^3$,
+$R_*$ and $L_*$  being the photospheric radius and luminosity.  The
+correction $2R_*/3r$  to the inverse-square law accounts for the grazing incidence of the
+rays.  On the other hand, a disk accreting steadily at rate $\dot M$ radiates $F_{\rm acc}
+= 3GM\dot M/8\pi r^3$ in addition to any reprocessed stellar light.  Since both fluxes
+scale as $r^{-3}$, there is a characteristic mass accretion rate at which the heat of
+accretion equals the irradiation.  This is
+\begin{equation}
+  \label{eq:Mdoteq}
+\dot M_{\rm eq} = \frac{4}{9\pi}\frac{R_* L_*}{GM_*} \approx 4.5\times 10^{-9} 
+\left(\frac{L_*}{L_\sun}\right) \left(\frac{R_*}{R_\sun}\right)
+\left(\frac{M_\sun}{M_*}\right) \,{\rm \dot M_\sun\,yr}^{-1}\,.
+\end{equation}
+The typical accretion rate for classical T+Tauri stars is $\sim 10^{-8}\,{\rm \dot
+  M_\sun\,yr}^{-1}$, though with wide scatter and with strong dependence on the
+protostellar mass, $\dot M\propto M_*^2$ \citep{Hartmann+Calvet+Gullbring+etal1998,
+  Muzerolle+Luhman+Briceno2005,Fang+vanBoekel+Wang+etal2009}.  That eq.~\eqref{eq:Mdoteq}
+should predict observed accretion rates is probably no coincidence.  By selection, T~Tauri
+have not yet reached the main sequence, so that their luminosities derive from
+gravitational contraction.  It is therefore natural that their accretion timescales
+$M_*/\dot M$ should be comparable to their Kelvin-Helmholtz times.
+
+However, protostellar disks are probably not flat but rather flaring, i.e. the vertical
+density scale height ($H$) increases faster than linearly with radius, and a flaring disk
+intercepts more of the stellar light than a flat disk would. Consequently, beyond a few
+stellar radii in the disk, the accretion power is locally rather small compared to the
+reprocessed emission.  To illustrate this, the effective temperature corresponding to an
+accretion rate of $10^{-8}\,{\rm \dot M\,yr^{-1}}$ onto a solar-mass star is only
+$85\,r_{\au}^{-3/4}\,{\rm K}$.  Infrared spectral-energy distributions clearly require
+higher temperatures than this, as can be achieved by a self-consistently flaring,
+passively reprocessing disk \citep{Chiang+Goldreich1997}.   Only in the boundary layer
+between the disk and the star should the accretion strongly outshine
+the reprocessed light, which is why boundary-layer emission is used to measure
+accretion rates.
+
+As already noted, it would be useful to find emission that could be directly associated
+with accretion at larger radii, particularly at $r\sim 1\au$ where MRI is most
+problematic.  The net frequency-integrated emission coming from these larger radii is not
+very useful as an accretion diagnostic because of the dominant reprocessed
+light.\footnote{except when the accretion rate temporarily rises far above
+  $10^{-8}\,{M_\sun\,yr^{-1}}$, as may be the case in FU~Orionis systems
+  \remark{references here}.}  However, molecular lines observed in some systems appear to
+require that some fraction of the gas at $r\lesssim 1\au$ is much hotter than would occur
+in a passively reprocessing disk if it radiated locally as a black body
+\citep{Salyk_etal08,Carr_Najita08}.  The emitting gas is probably many density scale
+heights from the disk midplane, where the density is relatively low and cooling
+inefficient.  To model the hot gas properly, one has to consider individual heating,
+cooling, and line-forming processes in some detail; the assumption of local thermodynamic
+equilibrium (LTE) is inadequate.  One finds that the main part of the stellar light, with
+a color temperature $\sim 4000\mbox{--}5000\,{\rm K}$, cannot explain the high gas
+temperature.  Instead, in a passively reprocessing model, the hot gas depends upon
+far-ultraviolet (and perhaps also X-ray) excesses in the stellar spectrum.  Because
+T~Tauri stars are chromospherically active, these excesses are strong but typically still
+less than one percent of the bolometric luminosity.  Therefore, if the accretion process
+can efficiently heat the low-density, high-altitude gas, it might produce a signature in
+the molecular emissions that could be distinguished from purely passive reprocessing.
+This has been the motivation for our study.
+
+\subsection{Plan of the paper.}
+
+We use the \prodimo code to model the microphysics of the disk gas, including non-LTE
+level populations, gas-dust interactions, radiative transitions, and radiative transfer.
+The features of this code are well documented by its authors \citep{Woitke+etal2009,
+Kamp+Tilling+Woitke+Thi2010,Woitke+Riaz+Duchene2011}, though it is still actively developing.
+\prodimo comes ``out of the box'' with a simple prescription for accretion heating, but
+this is characterized by a constant effective viscosity, corresponding to a constant
+heating rate per unit mass (dependent upon shear rate but independent
+of density and altitude) \remark{They have since added a different
+  treatment for the viscous heating by assuming an alpha parameter,
+  computing the dissipation at a given radius based on Mdot, then
+  distributing the heating in altitude as $\rho^2$}.
+
+% The temperature of the
+% emitting molecules is estimated from the exitation energies of the upper states of the
+% transitions involved, while the radius is constrained by the line widths, where measured,
+% on the assumption that these represent orbital motion.
+
+
+\section{Disk Modeling with ProDiMo}
+\label{sec:prodimo}
+
+\subsection{ProDiMo}
+
+Insert a description of the code, the knobs tweaked, and extra modules
+(notably Xray) here.
+
+\subsection{Disk Structure}
+The structure of a disk is determined in ProDiMo entirely through five
+parameters: the mass of the disk $M_{\mathrm{disk}}$, the mass of the
+star $M_\star$, the inner radius of the disk $R_{\mathrm{in}}$, the
+outer radius of the disk $R_{\mathrm{out}}$, and the radial power law
+index of the column density $\epsilon$ as defined by:
+
+\begin{equation}
+\ \Sigma\left(r\right) = \Sigma_0 r^{-\epsilon} .
+\end{equation} 
+
+We emulate the MMSN as described by Hayashi \remark{add ref} by taking
+$\Sigma_0 =1700\gcmsq$ and $\epsilon = 1.5$. If
+we set $R_\mathrm{in}  = 0.25\,\au$ and $R_\mathrm{out} = 200\,\au$,
+consistent with previous ProDiMo modeling of TW Hya \remark{citation?},
+then we can infer the mass of the disk by the relation
+
+\begin{equation}
+\ M_{\mathrm{disk}} = 2\pi \int_{R_{\mathrm{in}}}^{R_\mathrm{out}} \!
+\Sigma\left(r\right) r \mathrm{d}r ,
+\end{equation}
+which yields $M_\mathrm{disk} = 0.033 M_\odot$. 
+
+Finally, we follow \citet{Bai+Goodman2009} and take $M_\star = 1 M_\odot$. Hence, all five
+necessary structural parameters have been determined.
+
+\section{Simulation Results}
+
+In this section, we present a suite of ProDiMo simulations that probe
+the effects of different heating mechanisms on the molecular line
+emission of the disk. 
+
+\subsection{Baseline Model}
+
+Outline
+\begin{itemize}
+\item Dust abundance, why baseline of $10^{-4}$
+\item Discuss assumptions on chemistry, what is included, what is not
+  (may go in ProDiMo section above, but needs written either way)
+\item Discuss X-ray luminosity (should ``baseline model'' have any
+  X-ray at all?)
+\end{itemize}
+
+\remark{Make table with ProDiMo parameters}
+
+\remark{Make grid of standard disk structure plots}
+
+\subsection{Viscous Heating Models}
+
+Outline
+\begin{itemize}
+\item Discuss HT heating model and its implementation in ProDiMo
+\item Discuss effects on disk temperature
+\item Discuss effects on SED (continuum + line emission), showing ratio plots with
+  baseline model
+\item Emphasize differences that could be observable
+\end{itemize}
+
+\subsection{X-Ray Heating}
+
+Outline
+\begin{itemize}
+\item As above, but with emphasis on contrasts with viscous heating
+  model, esp. observables
+\end{itemize}
+
+\subsection{UV Heating}
+
+\subsection{Effects of Dust Abundance and Settling}
+
+\section{Conclusion}
+
+
+\bibliographystyle{apj}
+\bibliography{PDpaper}
+
+\end{document}

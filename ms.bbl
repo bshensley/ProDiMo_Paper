@@ -1,0 +1,58 @@
+\begin{thebibliography}{12}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+
+\bibitem[{{Bai} \& {Goodman}(2009)}]{Bai+Goodman2009}
+{Bai}, X.-N. \& {Goodman}, J. 2009, \apj, 701, 737
+
+\bibitem[{{Carr} \& {Najita}(2008)}]{Carr_Najita08}
+{Carr}, J.~S. \& {Najita}, J.~R. 2008, Science, 319, 1504
+
+\bibitem[{{Chiang} \& {Goldreich}(1997)}]{Chiang+Goldreich1997}
+{Chiang}, E.~I. \& {Goldreich}, P. 1997, \apj, 490, 368
+
+\bibitem[{{Fang} {et~al.}(2009){Fang}, {van Boekel}, {Wang}, {Carmona},
+  {Sicilia-Aguilar}, \& {Henning}}]{Fang+vanBoekel+Wang+etal2009}
+{Fang}, M., {van Boekel}, R., {Wang}, W., {Carmona}, A., {Sicilia-Aguilar}, A.,
+  \& {Henning}, T. 2009, \aap, 504, 461
+
+\bibitem[{{Gammie}(1996)}]{Gammie96}
+{Gammie}, C.~F. 1996, \apj, 457, 355
+
+\bibitem[{{Glassgold} {et~al.}(1997){Glassgold}, {Najita}, \&
+  {Igea}}]{Glassgold+etal97}
+{Glassgold}, A.~E., {Najita}, J., \& {Igea}, J. 1997, \apj, 480, 344
+
+\bibitem[{{Hartmann} {et~al.}(1998){Hartmann}, {Calvet}, {Gullbring}, \&
+  {D'Alessio}}]{Hartmann+Calvet+Gullbring+etal1998}
+{Hartmann}, L., {Calvet}, N., {Gullbring}, E., \& {D'Alessio}, P. 1998, \apj,
+  495, 385
+
+\bibitem[{{Kamp} {et~al.}(2010){Kamp}, {Tilling}, {Woitke}, {Thi}, \&
+  {Hogerheijde}}]{Kamp+Tilling+Woitke+Thi2010}
+{Kamp}, I., {Tilling}, I., {Woitke}, P., {Thi}, W.-F., \& {Hogerheijde}, M.
+  2010, \aap, 510, A18
+
+\bibitem[{{Muzerolle} {et~al.}(2005){Muzerolle}, {Luhman}, {Brice{\~n}o},
+  {Hartmann}, \& {Calvet}}]{Muzerolle+Luhman+Briceno2005}
+{Muzerolle}, J., {Luhman}, K.~L., {Brice{\~n}o}, C., {Hartmann}, L., \&
+  {Calvet}, N. 2005, \apj, 625, 906
+
+\bibitem[{{Salyk} {et~al.}(2008){Salyk}, {Pontoppidan}, {Blake}, {Lahuis}, {van
+  Dishoeck}, \& {Evans}}]{Salyk_etal08}
+{Salyk}, C., {Pontoppidan}, K.~M., {Blake}, G.~A., {Lahuis}, F., {van
+  Dishoeck}, E.~F., \& {Evans}, II, N.~J. 2008, \apjl, 676, L49
+
+\bibitem[{{Woitke} {et~al.}(2009){Woitke}, {Kamp}, \& {Thi}}]{Woitke+etal2009}
+{Woitke}, P., {Kamp}, I., \& {Thi}, W.-F. 2009, \aap, 501, 383
+
+\bibitem[{{Woitke} {et~al.}(2011){Woitke}, {Riaz}, {Duch{\^e}ne}, {Pascucci},
+  {Lyo}, {Dent}, {Phillips}, {Thi}, {M{\'e}nard}, {Herczeg}, {Bergin}, {Brown},
+  {Mora}, {Kamp}, {Aresu}, {Brittain}, {de Gregorio-Monsalvo}, \&
+  {Sandell}}]{Woitke+Riaz+Duchene2011}
+{Woitke}, P., {Riaz}, B., {Duch{\^e}ne}, G., {Pascucci}, I., {Lyo}, A.-R.,
+  {Dent}, W.~R.~F., {Phillips}, N., {Thi}, W.-F., {M{\'e}nard}, F., {Herczeg},
+  G.~J., {Bergin}, E., {Brown}, A., {Mora}, A., {Kamp}, I., {Aresu}, G.,
+  {Brittain}, S., {de Gregorio-Monsalvo}, I., \& {Sandell}, G. 2011, \aap, 534,
+  A44
+
+\end{thebibliography}
